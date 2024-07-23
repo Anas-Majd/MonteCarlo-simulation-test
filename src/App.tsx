@@ -1,7 +1,12 @@
 import "./App.css";
+import DuolingoButton from "./components/styles/Button";
 
 function App() {
-  return <>Monte Carlo Simulation true false</>;
+  return (
+    <>
+      <DuolingoButton>تابع</DuolingoButton>
+    </>
+  );
 }
 
 export default App;
