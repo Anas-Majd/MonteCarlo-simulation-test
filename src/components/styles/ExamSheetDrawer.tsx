@@ -18,19 +18,19 @@ const Drawer = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="flex flex-col items-center justify-center bg-white text-base-content min-h-full w-80 p-20 gap-10 ">
+          <ul className="flex flex-col items-center justify-center bg-white text-base-content min-h-full w-72 p-20 gap-10 ">
             <p className="font-swissra font-bold text-zinc-900 ">
               الورقة الحمرا
             </p>
-            <div className="bg-red-300 rounded-xl w-52 outline-8 outline-red-600 ">
-              <div className="flex justify-between w-full px-4  bg-red-600  rounded-xl rounded-b-none text-black font-bold">
+            <div className="bg-red-300 rounded-xl w-52 outline-8 outline-red-600  ">
+              <div className="flex justify-between w-full px-14  bg-red-600  rounded-xl rounded-b-none text-black font-bold">
                 <p>T</p>
                 <p>F</p>
               </div>
               {Array.from({ length: 10 }).map((_, index) => (
                 <li
                   key={index}
-                  className={`flex justify-between w-full ${
+                  className={`flex justify-between w-full px-10 ${
                     index % 2 == 0 && "bg-gray-100"
                   }`}
                 >
