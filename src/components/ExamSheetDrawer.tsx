@@ -4,7 +4,6 @@ const Drawer = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          {/* Page content here */}
           <label
             htmlFor="my-drawer"
             className="button-19 font-swissra font-bold drawer-button"

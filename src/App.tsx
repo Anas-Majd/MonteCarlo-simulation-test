@@ -2,8 +2,8 @@ import "./App.css";
 import NormalTextBox from "./components/styles/NormalTextBox";
 import anas from "../public/imges/anas.svg";
 import majd from "../public/imges/majd.svg";
-import ProgressBar from "./components/styles/ProgressBar";
-import Drawer from "./components/styles/ExamSheetDrawer";
+import ProgressBar from "./components/ProgressBar";
+import Drawer from "./components/ExamSheetDrawer";
 function App() {
   return (
     <div>
