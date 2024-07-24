@@ -1,10 +1,10 @@
 interface Props {
-  children: React.ReactNode; // Proper type for children
+  children: React.ReactNode;
 }
 
 const DuolingoButton = ({ children }: Props) => {
   return (
-    <button className="button-19 font-swissra font-bold">{children}</button>
+    <button className=" button-19 font-swissra font-bold">{children}</button>
   );
 };
 
