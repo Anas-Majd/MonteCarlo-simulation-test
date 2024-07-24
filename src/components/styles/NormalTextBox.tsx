@@ -13,7 +13,7 @@ const NormalTextBox = ({ children }: Props) => {
   const isArabic = script === "arabic";
 
   return (
-    <div className="chat chat-start sm:max-w-80 max-w-100 ">
+    <div className="chat chat-end sm:max-w-80 max-w-100 ">
       <div className="chat-bubble">
         <p
           dir={isArabic ? "rtl" : "ltr"}
