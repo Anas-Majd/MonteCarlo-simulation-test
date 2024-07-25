@@ -1,23 +1,23 @@
 [
     {
         "id": "intro-ar",
-        "text": " ما تسألني ولا سؤال زيادة/n  انا بنص الفحص وبدي مساعدتك./n قدامي 20 سؤال ومالي عرفان شو اضمن طريقة لشلف "
+        "text": " ما تسألني ولا سؤال زيادة  انا بنص الفحص وبدي مساعدتك. قدامي 20 سؤال ومالي عرفان شو اضمن طريقة لشلف "
     },
     {
         "id": "intro-en",
-        "text": "no questions asked... /n I need your help./n I am in the middle of a test and I am calling to ask /n What’s the best strategy for maximizing my score on twenty true or false questions?"
+        "text": "no questions asked...  I need your help. I am in the middle of a test and I am calling to ask What’s the best strategy for maximizing my score on twenty true or false questions?"
     },
     {
         "id": "response-part-1-ar",
-        "text": "مشكور معلم /n بس بدك تستوعب انه سؤالي بحد ذاته كان غلط /n مافي شي اسمه اضمن طريقة شلف"
+        "text": "مشكور معلم بس بدك تستوعب انه سؤالي بحد ذاته كان غلط  مافي شي اسمه اضمن طريقة شلف"
     },
     {
         "id": "response-part-1-en",
-        "text": "Thank you for your answer./n However, you do realize that no such strategy exists, right?/n My question itself is flawed."
+        "text": "Thank you for your answer. However, you do realize that no such strategy exists, right? My question itself is flawed."
     },
     {
         "id": "response-part-2-ar",
-        "text": "كتير من الطلاب بتفكر انه اذا وحدت اجابتها لكل اسئلة الخيارات فهي هيك لح تكون ضمنت أكبر عدد من الإجابات الصحيحة/n لانه لو شلفت كلشي فاحتمال كون غلط بكلشي ما؟/n اما لو كل الإجابات من نفس النوع فلح اضمن نص العلامة"
+        "text": "كتير من الطلاب بتفكر انه اذا وحدت اجابتها لكل اسئلة الخيارات فهي هيك لح تكون ضمنت أكبر عدد من الإجابات الصحيحة لانه لو شلفت كلشي فاحتمال كون غلط بكلشي ما؟ اما لو كل الإجابات من نفس النوع فلح اضمن نص العلامة"
     },
     {
         "id": "response-part-2-en",
@@ -25,42 +25,42 @@
     },
     {
         "id": "response-part-3-ar",
-        "text": "كتير من الطلاب بتفكر بهي الطريقة بس مو انا يلي حأثبتلك انه تفكيرك غلط/n جهازك يلي أنت عليه هو يلي حيأثبتلك هاد الشي /n حيقوم جهازك بعملية تسمى محاكاة المونتي كارلو حينتج منها توزيع احتمالي لكل الاستراتيجيات"
+        "text": "كتير من الطلاب بتفكر بهي الطريقة بس مو انا يلي حأثبتلك انه تفكيرك غلط جهازك يلي أنت عليه هو يلي حيأثبتلك هاد الشي /n حيقوم جهازك بعملية تسمى محاكاة المونتي كارلو حينتج منها توزيع احتمالي لكل الاستراتيجيات"
     },
     {
         "id": "response-part-3-en",
-        "text": "the device you are running this website on will prove you wrong /n your device will do what's called a monte carlo simulation which will provide us with enough data to compare each strategy"
+        "text": "the device you are running this website on will prove you wrong your device will do what's called a monte carlo simulation which will provide us with enough data to compare each strategy"
     },
     {
         "id": "montecarlo-ar",
-        "text": "محاكاة المونتي كارلو هي تقنية اوجدها العالم فون نويمان وهو العالم نفسه يلي اخترع معمارية الجهاز يلي عم تقرأ منه/n هي تقنية إحصائية نستخدم فيها قدرات المعالج لتوليد أعداد كبيرة من المحاكات العشوائية لتقدير النتائج المحتملة"
+        "text": "محاكاة المونتي كارلو هي تقنية اوجدها العالم فون نويمان وهو العالم نفسه يلي اخترع معمارية الجهاز يلي عم تقرأ منه هي تقنية إحصائية نستخدم فيها قدرات المعالج لتوليد أعداد كبيرة من المحاكات العشوائية لتقدير النتائج المحتملة"
     },
     {
         "id": "montecarlo-en",
-        "text": "The Monte Carlo simulation is a technique developed by the scientist von Neumann, the same scientist who invented the architecture of the device you're reading this on./n It is a statistical technique where we use the processing power to generate a large number of random simulations to estimate possible outcomes."
+        "text": "The Monte Carlo simulation is a technique developed by the scientist von Neumann, the same scientist who invented the architecture of the device you're reading this on. It is a statistical technique where we use the processing power to generate a large number of random simulations to estimate possible outcomes."
     },
     {
         "id": "response-part-4-ar",
-        "text": "هي نتائج المحاكاة قدامك/n حتلاقي معي انه كل استراتيجيات التشليف الها نفس التوزيع ونفس الانحراف المعياري ونفس المتوسط الحسابي يعني نفس الشي!!"
+        "text": "هي نتائج المحاكاة قدامك حتلاقي معي انه كل استراتيجيات التشليف الها نفس التوزيع ونفس الانحراف المعياري ونفس المتوسط الحسابي يعني نفس الشي!!"
     },
     {
         "id": "response-part-4-en",
-        "text": "Here are the simulation results. /n You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same mean—meaning they're the same!"
+        "text": "Here are the simulation results. You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same mean—meaning they're the same!"
     },
     {
         "id": "wisdom-part-1-ar",
-        "text": "طيب هلق شو؟ /n بعد كل هاللعي يلي حكيناه ليش لساتني معك عالتلفون؟ /n بدي قلك شغلة بس "
+        "text": "طيب هلق شو؟ بعد كل هاللعي يلي حكيناه ليش لساتني معك عالتلفون؟  بدي قلك شغلة بس "
     },
     {
         "id": "wisdom-part-1-en",
-        "text": "So, what's next? Why am I still talking to you? What's the purpose of this website? /n you need to know this..."
+        "text": "So, what's next? Why am I still talking to you? What's the purpose of this website?  you need to know this..."
     },
     {
         "id": "wisdom-part-2-ar",
-        "text": "لا تدع العشوائية تخدعك فهي ستنتصر عليك مادمت تلعب لعبتها/n لا تراهن بنجاحك على رمي النرد او سحب الكرة /n كن فاضلاً قم بالعمل الحقيقي وادرس /n كن أفضل مني"
+        "text": "لا تدع العشوائية تخدعك فهي ستنتصر عليك مادمت تلعب لعبتها لا تراهن بنجاحك على رمي النرد او سحب الكرة  كن فاضلاً قم بالعمل الحقيقي وادرس /n كن أفضل مني"
     },
     {
         "id": "wisdom-part-2-en",
-        "text": "Randomness is all around you, working against you./n If you keep playing its game, you will eventually lose./n Don't fall for the safety trap. Do the hard work. Study. Be virtuous. Be better than me."
+        "text": "Randomness is all around you, working against you. If you keep playing its game, you will eventually lose. Don't fall for the safety trap. Do the hard work. Study. Be virtuous. Be better than me."
     }
 ]

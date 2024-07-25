@@ -11,13 +11,13 @@ interface MyChartProps {
   height: number;
 }
 
-const MyChart: React.FC<MyChartProps> = ({ data, width, height }) => {
+const MyChart = ({ data, width, height }: MyChartProps) => {
   return (
     <BarChart data={data} width={width} height={height}>
-      <CartesianGrid strokeDasharray="3 3"/>
+      <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="Right Answer" />
       <YAxis dataKey="How Many times" />
-      <Bar dataKey="How many times" fill="#0F0C4A"/>
+      <Bar dataKey="How many times" fill="#0F0C4A" />
     </BarChart>
   );
 };

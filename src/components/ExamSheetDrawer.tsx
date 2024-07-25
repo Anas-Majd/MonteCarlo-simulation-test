@@ -1,4 +1,8 @@
-const Drawer = () => {
+const ExamSheetDrawer = ({
+  selectedLanguage,
+}: {
+  selectedLanguage: string;
+}) => {
   return (
     <div>
       <div className="drawer">
@@ -8,7 +12,8 @@ const Drawer = () => {
             htmlFor="my-drawer"
             className="button-19 font-swissra font-bold drawer-button"
           >
-            افتح الورقة
+            {selectedLanguage === "ar" && <>دعني أنتقي الأجوبة بيدي</>}
+            {selectedLanguage === "en" && <>I'll pick the answers</>}
           </label>
         </div>
         <div className="drawer-side">
@@ -26,7 +31,7 @@ const Drawer = () => {
                 <p>T</p>
                 <p>F</p>
               </div>
-              {Array.from({ length: 10 }).map((_, index) => (
+              {Array.from({ length: 20 }).map((_, index) => (
                 <li
                   key={index}
                   className={`flex justify-between w-full px-10 ${
@@ -38,6 +43,7 @@ const Drawer = () => {
                     name={`radio-group-${index}`}
                     className="radio radio-error m-2"
                   />
+
                   <input
                     type="radio"
                     name={`radio-group-${index}`}
@@ -46,7 +52,7 @@ const Drawer = () => {
                 </li>
               ))}
             </div>
-            <button className="button-19  ">Submit</button>
+            <button className="button-19">Submit</button>
           </ul>
         </div>
       </div>
@@ -54,4 +60,4 @@ const Drawer = () => {
   );
 };
 
-export default Drawer;
+export default ExamSheetDrawer;
