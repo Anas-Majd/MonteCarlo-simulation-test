@@ -5,14 +5,14 @@ const detectScript = (text: string) => {
   return arabicPattern.test(text) ? "arabic" : "latin";
 };
 
-const NormalTextBox = ({ children }: { children: string }) => {
+const ImportantTextBox = ({ children }: { children: string }) => {
   const text = children?.toString() || "";
   const script = detectScript(text);
   const isArabic = script === "arabic";
 
   return (
-    <div className="chat chat-end sm:max-w-80 max-w-100 ">
-      <div className="chat-bubble">
+    <div className="chat chat-end sm:max-w-80 w-120 ">
+      <div className="chat-bubble bg-transparent  border-gray-600 border-4 border-opacity-45 border-dashed">
         <p
           dir={isArabic ? "rtl" : "ltr"}
           className={
@@ -28,4 +28,4 @@ const NormalTextBox = ({ children }: { children: string }) => {
   );
 };
 
-export default NormalTextBox;
+export default ImportantTextBox;

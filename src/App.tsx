@@ -1,11 +1,13 @@
 import "./App.css";
-import DuolingoButton from "./components/styles/Button";
 import NormalTextBox from "./components/styles/NormalTextBox";
 import anas from "../public/imges/anas.svg";
 import Calling from ''
 import TextBox from ''
 import ImportantTextBox from ''
 import majd from "../public/imges/majd.svg";
+import ProgressBar from "./components/ProgressBar";
+import Drawer from "./components/ExamSheetDrawer";
+import ImportantTextBox from "./components/styles/ImportantTextBox";
 import React from "react";
 function App() {
   const [topState, setTopState] = React.useState("Calling");
