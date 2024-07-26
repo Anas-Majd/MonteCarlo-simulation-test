@@ -1,5 +1,5 @@
 import anas from "/public/imges/anas.svg";
-import { TextGenerateEffect } from "./styles/TextGenerateEffect";
+import { TextGenerateEffect } from "../components/styles/TextGenerateEffect";
 import { IoCall } from "react-icons/io5";
 
 const Calling = ({ Answer }: { Answer: () => void }) => {

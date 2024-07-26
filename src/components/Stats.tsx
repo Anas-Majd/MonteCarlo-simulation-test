@@ -1,6 +1,5 @@
-import React from "react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
-import { average, SD } from "../logic.ts";
+import { average, SD } from "../services/logic.ts";
 
 interface MyChartProps {
   data: { name: string; value: number }[];
