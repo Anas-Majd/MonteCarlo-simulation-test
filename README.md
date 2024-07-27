@@ -63,19 +63,23 @@ Since the probabilities of each outcome are identical regardless of the strategy
 The standard deviation (SD) formula for a binomial distribution is:
 
 ```math
-\[ \sigma = \sqrt{n \cdot p \cdot (1 - p)} \]
+ \sigma = \sqrt{n \cdot p \cdot (1 - p)}
 ```
 
 Substituting the given values:
 
-\[ \sigma^2 = 10 \cdot 0.5 \cdot (1 - 0.5) \]
-\[ \sigma^2 = 10 \cdot 0.5 \cdot 0.5 \]
-\[ \sigma^2 = 10 \cdot 0.25 \]
-\[ \sigma^2 = 2.5 \]
+```math
+ \sigma^2 = 10 \cdot 0.5 \cdot (1 - 0.5)
+ \sigma^2 = 10 \cdot 0.5 \cdot 0.5
+ \sigma^2 = 10 \cdot 0.25
+ \sigma^2 = 2.5
+```
 
 Now, let's calculate the square root of 2.5 more accurately:
 
-\[ \sqrt{2.5} \approx 1.5811388300841898 \]
+```math
+ \sqrt{2.5} \approx 1.5811388300841898
+```
 
 So, the standard deviation for \( n = 10 \) trials with a 50-50 probability is approximately 1.58.
 
