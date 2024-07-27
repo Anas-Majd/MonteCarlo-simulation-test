@@ -24,7 +24,7 @@ The results of the simulation are visualized in three histograms. Each histogram
 
 sample run of the simulation
 
-![A graph with numbers and lines Description automatically generated](public\assets\imges\charts.png)
+![A graph with numbers and lines Description automatically generated](public/assets/imges/charts.png)
 \- Histogram 1: Distribution of scores when the strategy is to always guess True.
 \- Histogram 2: Distribution of scores when the strategy is to always guess False.
 \- Histogram 3: Distribution of scores when answers are Random.
@@ -55,7 +55,7 @@ If you choose all False, the outcomes are:
 
 Since the probabilities of each outcome are identical regardless of the strategy chosen, it follows that no single strategy is superior when the answers are unknown.
 
-![](public\assets\imges\probabilityTree.png)
+![](public/assets/imges/probabilityTree.png)
 
 ## **Calculation of Standard Deviation**
 
