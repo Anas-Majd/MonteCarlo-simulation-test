@@ -1,11 +1,11 @@
 export const dialogue = [
   {
     id: "0-ar",
-    text: "ما تسألني ولا سؤال زيادة  انا بنص الفحص وبدي مساعدتك. قدامي 20 سؤال ومالي عرفان شو اضمن طريقة لشلف ",
+    text: "ما تسألني ولا سؤال زيادة!  انا بنص الفحص وبدي مساعدتك. قدامي 10 أسئلة صح وغلط ومالي عرفان شو اضمن طريقة لشلف ",
   },
   {
     id: "0-en",
-    text: "no questions asked...  I need your help. I am in the middle of a test and I am calling to ask What’s the best strategy for maximizing my score on twenty true or false questions?",
+    text: "no questions asked...  I need your help. I am in a test What’s the best strategy for maximizing my score in a test made of 10 true or false question?",
   },
   {
     id: "1-ar",
@@ -21,19 +21,19 @@ export const dialogue = [
   },
   {
     id: "2-en",
-    text: "If each question has a 50/50 chance of being correct, choosing all true or all false could guarantee getting about half right. In contrast, randomizing answers could result in getting all wrong due to the inherent unpredictability. Thus, most students prefer the former over the latter.",
+    text: "If each question has a 50/50 chance of being correct, choosing all true or all false could guarantee getting about half right. In contrast, randomizing answers could result in getting all wrong due to the inherent unpredictability. Thus, most test-takers prefer the former over the latter.",
   },
   {
     id: "3-ar",
-    text: "كتير من الطلاب بتفكر بهي الطريقة بس مو انا يلي حأثبتلك انه تفكيرك غلط جهازك يلي أنت عليه هو يلي حيأثبتلك هاد الشي حيقوم جهازك بعملية تسمى محاكاة المونتي كارلو حينتج منها توزيع احتمالي لكل الاستراتيجيات",
+    text: "بس مو انا يلي حأثبتلك انه التفكير هاد غلط جهازك يلي عم تتصفح عليه حيأثبتلك هاد الشي. حيقوم جهازك بعملية تسمى محاكاة المونتي كارلو حينتج منها توزيع احتمالي لكل الاستراتيجيات",
   },
   {
     id: "3-en",
-    text: "the device you are running this website on will prove you wrong your device will do what's called a monte carlo simulation which will provide us with enough data to compare each strategy",
+    text: "the device you are running this website on will prove this consensus wrong it will run a monte carlo simulation which will provide us with enough data to compare each strategy",
   },
   {
     id: "3.5-ar",
-    text: "محاكاة المونتي كارلو هي تقنية اوجدها العالم فون نويمان وهو العالم نفسه يلي اخترع معمارية الجهاز يلي عم تقرأ منه هي تقنية إحصائية نستخدم فيها قدرات المعالج لتوليد أعداد كبيرة من المحاكات العشوائية لتقدير النتائج المحتملة",
+    text: "محاكاة المونتي كارلو هي تقنية اوجدها العالم فون نويمان وهو العالم نفسه يلي اخترع معمارية الجهاز يلي عم تقرأ منه هي تقنية إحصائية منستخدم فيها قدرات المعالج لتوليد أعداد كبيرة من المحاكات العشوائية لتقدير النتائج المحتملة",
   },
   {
     id: "3.5-en",
@@ -45,11 +45,11 @@ export const dialogue = [
   },
   {
     id: "4-en",
-    text: "Here are the simulation results. You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same meaning they're the same!",
+    text: "Here are the simulation results. You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same mean, meaning they're the same!",
   },
   {
     id: "5-ar",
-    text: "طيب هلق شو؟ بعد كل هاللعي يلي حكيناه ليش لساتني معك عالتلفون؟  بدي قلك شغلة بس ",
+    text: "طيب هلق شو؟  بدي قلك شغلة بس ",
   },
   {
     id: "5-en",
@@ -57,7 +57,7 @@ export const dialogue = [
   },
   {
     id: "6-ar",
-    text: "لا تدع العشوائية تخدعك فهي ستنتصر عليك مادمت تلعب لعبتها لا تراهن بنجاحك على رمي النرد او سحب الكرة  كن فاضلاً قم بالعمل الحقيقي وادرس كن أفضل مني",
+    text: " لا تراهن بنجاحك على رمي النرد كن فاضلاً قم بالعمل الحقيقي وادرس, مادمت لا تعلم ماهي الأجوبة الصحيحة لا يوجد أي ضمان لك. لا تنوهم. ",
   },
   {
     id: "6-en",

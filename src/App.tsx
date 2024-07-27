@@ -33,12 +33,6 @@ function App() {
   const [selectedTextId, setSelectedTextID] = useState(`0-${selectedLanguage}`);
 
   useEffect(() => {
-    if (window.location.href.includes("/en")) {
-      setSelectedLanguage("en");
-    }
-  }, []);
-
-  useEffect(() => {
     setSelectedTextID(`${progress}-${selectedLanguage}`);
     if (progress === 0) {
       //calling
@@ -80,7 +74,7 @@ function App() {
       setTopState("final");
       setBottomState("final");
     }
-  }, [progress]);
+  }, [progress,selectedLanguage]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -113,6 +107,7 @@ function App() {
         value={`${progress * 10}`}
         max={`70`}
         onClick={onResetClick}
+        setLanguage={setSelectedLanguage}
       />
       <div className="flex flex-row justify-between">
         {topState === "calling" && <Calling Answer={onAnswer} />}
@@ -125,12 +120,11 @@ function App() {
         )}
 
         {topState === "important_talking" && (
-          <div className="flex flex-row-reverse w-full items-end sm:mr-20">
-            <img className="sm:w-40 w-24  scale-x-[-1]" src={talker} />
+          <div className="flex flex-row-reverse w-full justify-center items-end sm:mr-20">
             <ImportantTextBox>{selectedDialog?.text}</ImportantTextBox>
           </div>
         )}
-        {topState === "final" && <TopFinal />}
+        {topState === "final" && <TopFinal Answer={Answer}/>}
       </div>
 
       <div className="flex flex-row justify-center w-full">
