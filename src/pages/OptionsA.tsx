@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ExamSheetDrawer from "../components/ExamSheetDrawer";
 
 interface Props {
@@ -13,6 +14,7 @@ const OptionsA = ({
   setAnswer,
   onDrawerClose,
 }: Props) => {
+  const[isDrawerOpen,setIsDrawerOpen] = useState(false)
   return (
     <div className="flex sm:flex-row flex-col justify-around items-center gap-5  h-full px-10">
       <button
@@ -35,13 +37,27 @@ const OptionsA = ({
         {selectedLanguage === "ar" && <>إنتقي "خاطئ" لكل الإجابات</>}
         {selectedLanguage === "en" && <>pick False for all questions</>}
       </button>
-      <div>
+      <button
+        onClick={() => {
+          setIsDrawerOpen(true)
+        }}
+        className="button-19 font-swissra font-bold"
+      >
+        {selectedLanguage === "ar" && <>دعني أنتقي الإجابات بيدي</>}
+        {selectedLanguage === "en" && <>let me choose the answers</>}
+      </button>
         <ExamSheetDrawer
+          isOpen={isDrawerOpen}
           selectedLanguage={selectedLanguage}
           setAnswer={setAnswer}
-          onSubmit={onDrawerClose}
+          onClose={()=>{
+            setIsDrawerOpen(false)
+          }}
+          onSubmit={()=>{
+            setProgress(1)
+            setIsDrawerOpen(false)
+          }}
         />
-      </div>
     </div>
   );
 };
