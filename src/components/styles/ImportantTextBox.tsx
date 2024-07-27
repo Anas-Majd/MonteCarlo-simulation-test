@@ -5,7 +5,7 @@ const detectScript = (text: string) => {
   return arabicPattern.test(text) ? "arabic" : "latin";
 };
 
-const ImportantTextBox = ({ children }: { children: string }) => {
+const ImportantTextBox = ({ children }: { children?: string }) => {
   const text = children?.toString() || "";
   const script = detectScript(text);
   const isArabic = script === "arabic";

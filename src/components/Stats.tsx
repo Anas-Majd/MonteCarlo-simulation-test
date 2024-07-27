@@ -11,10 +11,16 @@ const MyChart = ({ data, width, height }: MyChartProps) => {
   return (
     <div className="flex flex-col items-center">
       <BarChart data={data} width={width} height={height}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="Right Answer" />
-        <YAxis dataKey="How Many times" />
-        <Bar dataKey="How many times" fill="#0F0C4A" />
+        <CartesianGrid strokeDasharray="6 6" opacity={"10%"} />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Bar
+          dataKey="value"
+          fill="#1d232a"
+          stroke="#00b5ff"
+          opacity={"40%"}
+          strokeWidth={2}
+        />
       </BarChart>
       <div className="mt-4">
         <div>

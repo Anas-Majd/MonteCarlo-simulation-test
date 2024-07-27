@@ -5,7 +5,7 @@ const detectScript = (text: string) => {
   return arabicPattern.test(text) ? "arabic" : "latin";
 };
 
-const NormalTextBox = ({ children }: { children: string }) => {
+const NormalTextBox = ({ children }: { children?: string }) => {
   const text = children?.toString() || "";
   const script = detectScript(text);
   const isArabic = script === "arabic";
@@ -13,7 +13,7 @@ const NormalTextBox = ({ children }: { children: string }) => {
   return (
     <div className="chat chat-end sm:max-w-80 max-w-100 ">
       <div className="chat-bubble">
-        <p
+        <div
           dir={isArabic ? "rtl" : "ltr"}
           className={
             isArabic
@@ -22,7 +22,7 @@ const NormalTextBox = ({ children }: { children: string }) => {
           }
         >
           <TextGenerateEffect words={children} />
-        </p>
+        </div>
       </div>
     </div>
   );

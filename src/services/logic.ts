@@ -6,11 +6,11 @@ function generateRandomBinaryString() {
 }
 export function CalculateScore(string: string) {
   let ans = generateRandomBinaryString();
-  return Array.from(string).reduce((score:number, char, i) => {
+  return Array.from(string).reduce((score: number, char, i) => {
     return score + (char === ans[i] ? 1 : 0);
   }, 0);
 }
-export function SD(data: { name: string ,value: number; }[]) {
+export function SD(data: { name: string; value: number }[]) {
   let sd = 0;
   let avg = average(data);
   for (let i = 1; i <= 10; i++) {
@@ -19,7 +19,7 @@ export function SD(data: { name: string ,value: number; }[]) {
   sd = Math.sqrt(sd);
   return sd;
 }
-export function average(data: { name: string ,value: number; }[]) {
+export function average(data: { name: string; value: number }[]) {
   let avg = 0;
   for (let i = 1; i <= 10; i++) {
     avg += (i * data[i].value) / 1000000;
@@ -27,9 +27,18 @@ export function average(data: { name: string ,value: number; }[]) {
   return avg;
 }
 export async function Compute() {
-  let allTrue = Array.from({ length: 11 }, (_, i) => ({ name: `${i}`, value: 0 }));
-  let allFalse = Array.from({ length: 11 }, (_, i) => ({ name: `${i}`, value: 0 }));
-  let random = Array.from({ length: 11 }, (_, i) => ({ name: `${i}`, value: 0 }));
+  let allTrue = Array.from({ length: 11 }, (_, i) => ({
+    name: `${i}`,
+    value: 0,
+  }));
+  let allFalse = Array.from({ length: 11 }, (_, i) => ({
+    name: `${i}`,
+    value: 0,
+  }));
+  let random = Array.from({ length: 11 }, (_, i) => ({
+    name: `${i}`,
+    value: 0,
+  }));
   let testCases = 1000000;
   while (testCases--) {
     let Rscore = 0;
