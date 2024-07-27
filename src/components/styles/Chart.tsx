@@ -1,5 +1,5 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
-import { average, SD } from "../services/logic.ts";
+import { average, SD } from "../../services/logic.ts";
 
 interface MyChartProps {
   data: { name: string; value: number }[];

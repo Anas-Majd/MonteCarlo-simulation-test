@@ -8,7 +8,7 @@ const Calling = ({ Answer }: { Answer: () => void }) => {
       <div className="text-2xl">
         <TextGenerateEffect words="Anas Calling...." />
       </div>
-      <img className="w-60" src={anas} />
+      <img className="w-60 rounded-b-full" src={anas} />
       <button className="pulse" onClick={Answer}>
         <IoCall />
       </button>

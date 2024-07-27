@@ -13,7 +13,7 @@ const ImportantTextBox = ({ children }: { children?: string }) => {
   return (
     <div className="chat chat-end sm:max-w-80 w-120 ">
       <div className="chat-bubble bg-transparent  border-gray-600 border-4 border-opacity-45 border-dashed">
-        <p
+        <div
           dir={isArabic ? "rtl" : "ltr"}
           className={
             isArabic
@@ -22,7 +22,7 @@ const ImportantTextBox = ({ children }: { children?: string }) => {
           }
         >
           <TextGenerateEffect words={children} />
-        </p>
+        </div>
       </div>
     </div>
   );
