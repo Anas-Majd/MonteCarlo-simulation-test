@@ -25,6 +25,7 @@ The results of the simulation are visualized in three histograms. Each histogram
 sample run of the simulation
 
 ![A graph with numbers and lines Description automatically generated](public/assets/imges/charts.png)
+
 \- Histogram 1: Distribution of scores when the strategy is to always guess True.
 \- Histogram 2: Distribution of scores when the strategy is to always guess False.
 \- Histogram 3: Distribution of scores when answers are Random.
@@ -61,7 +62,9 @@ Since the probabilities of each outcome are identical regardless of the strategy
 
 The standard deviation (SD) formula for a binomial distribution is:
 
+```math
 \[ \sigma = \sqrt{n \cdot p \cdot (1 - p)} \]
+```
 
 Substituting the given values:
 
