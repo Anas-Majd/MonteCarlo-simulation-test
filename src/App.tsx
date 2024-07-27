@@ -5,7 +5,7 @@ import talker from "../public/assets/imges/talker.svg";
 import ProgressBar from "./components/ProgressBar";
 import { useEffect, useMemo, useState } from "react";
 import Calling from "./pages/Calling";
-import { Compute } from "./services/logic";
+import { Compute, CalculateScore } from "./services/logic";
 import { dialogue } from "../public/data/DialogueText";
 import States from "./components/States";
 import OptionsA from "./pages/OptionsA";
@@ -25,6 +25,7 @@ function App() {
     allFalse: [],
     random: [],
   });
+  const [score, setScore] = useState(0);
   const [topState, setTopState] = useState("calling");
   const [bottomState, setBottomState] = useState("calling");
   const [progress, setProgress] = useState(0);
@@ -74,7 +75,7 @@ function App() {
       setTopState("final");
       setBottomState("final");
     }
-  }, [progress,selectedLanguage]);
+  }, [progress, selectedLanguage]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -97,6 +98,9 @@ function App() {
     setBottomState("calling");
   };
 
+  useEffect(() => {
+    setScore(CalculateScore(Answer));
+  }, [Answer]);
   const selectedDialog = useMemo(() => {
     return dialogue.find((data) => data.id === selectedTextId);
   }, [selectedTextId]);
@@ -124,7 +128,7 @@ function App() {
             <ImportantTextBox>{selectedDialog?.text}</ImportantTextBox>
           </div>
         )}
-        {topState === "final" && <TopFinal Answer={Answer}/>}
+        {topState === "final" && <TopFinal Score={score} selectedLanguage={selectedLanguage} />}
       </div>
 
       <div className="flex flex-row justify-center w-full">
