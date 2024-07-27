@@ -66,14 +66,14 @@
 
 @font-face {
    font-family: 'Swissra';
-   src: url('../public/fonts/alfont_com_AlFont_com_Swissra-Normal-1.otf') format('opentype');
+   src: url('../public/assets/fonts/alfont_com_AlFont_com_Swissra-Normal-1.otf') format('opentype');
    font-weight: normal;
    font-style: normal;
  }
 
  @font-face {
    font-family: 'Swissra';
-   src: url('../public/fonts/alfont_com_AlFont_com_Swissra-Bold.otf') format('opentype');
+   src: url('../public/assets/fonts/alfont_com_AlFont_com_Swissra-Bold.otf') format('opentype');
    font-weight: bold;
    font-style: normal;
  }

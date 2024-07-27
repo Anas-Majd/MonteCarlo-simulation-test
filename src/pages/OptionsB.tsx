@@ -5,7 +5,7 @@ interface Props {
 
 const OptionsB = ({ setProgress, selectedLanguage }: Props) => {
   return (
-    <div className="flex sm:flex-row flex-col justify-around gap-5 w-full h-full px-10">
+    <div className="flex sm:flex-row flex-col justify-around gap-5 w-full h-full px-10 mb-10">
       <button
         className="button-19 font-swissra font-bold"
         onClick={() => {

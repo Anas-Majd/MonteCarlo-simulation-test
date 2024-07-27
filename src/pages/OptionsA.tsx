@@ -14,7 +14,7 @@ const OptionsA = ({
   onDrawerClose,
 }: Props) => {
   return (
-    <div className="flex sm:flex-row flex-col justify-around items-center gap-5  h-full px-10">
+    <div className="flex sm:flex-row flex-col justify-around items-center gap-5  h-full px-10 mb-10">
       <button
         onClick={() => {
           setAnswer("1111111111");
