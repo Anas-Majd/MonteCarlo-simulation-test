@@ -1,8 +1,8 @@
 import "./App.css";
 import NormalTextBox from "./components/styles/NormalTextBox";
 import ImportantTextBox from "./components/styles/ImportantTextBox";
-import anas from "../public/imges/anas.svg";
-import majd from "../public/imges/majd.svg";
+import anas from "../public/assets/imges/anas.svg";
+import majd from "../public/assets/imges/majd.svg";
 import ProgressBar from "./components/ProgressBar";
 import { useEffect, useMemo, useState } from "react";
 import Calling from "./pages/Calling";
@@ -122,7 +122,7 @@ function App() {
         {topState === "calling" && <Calling Answer={onAnswer} />}
 
         {topState === "talking" && (
-          <div className="flex flex-row-reverse w-full items-end sm:mr-20">
+          <div className="flex flex-row-reverse w-full items-end sm:mr-20 mb-5">
             <img className="sm:w-40 w-24 scale-x-[-1]" src={anas} />
             <NormalTextBox>{selectedDialog?.text}</NormalTextBox>
           </div>
@@ -173,7 +173,7 @@ function App() {
           </button>
         )}
 
-        {bottomState === "final" && <p>Bottom</p>}
+        {bottomState === "final" && <BottomFinale />}
       </div>
     </div>
   );

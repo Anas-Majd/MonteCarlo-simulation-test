@@ -1,4 +1,4 @@
-import anas from "/public/imges/anas.svg";
+import anas from "/public/assets/imges/anas.svg";
 import { TextGenerateEffect } from "../components/styles/TextGenerateEffect";
 import { IoCall } from "react-icons/io5";
 
@@ -10,7 +10,7 @@ const Calling = ({ Answer }: { Answer: () => void }) => {
       </div>
       <img className="w-60 rounded-b-full" src={anas} />
       <button className="pulse" onClick={Answer}>
-        <IoCall />
+        <IoCall size={30} />
       </button>
     </div>
   );
