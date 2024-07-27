@@ -8,13 +8,8 @@ interface Props {
   onDrawerClose: () => void;
 }
 
-const OptionsA = ({
-  setProgress,
-  selectedLanguage,
-  setAnswer,
-  onDrawerClose,
-}: Props) => {
-  const[isDrawerOpen,setIsDrawerOpen] = useState(false)
+const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <div className="flex sm:flex-row flex-col justify-around items-center gap-5  h-full px-10 mb-10">
       <button
@@ -39,25 +34,25 @@ const OptionsA = ({
       </button>
       <button
         onClick={() => {
-          setIsDrawerOpen(true)
+          setIsDrawerOpen(true);
         }}
         className="button-19 font-swissra font-bold"
       >
         {selectedLanguage === "ar" && <>دعني أنتقي الإجابات بيدي</>}
         {selectedLanguage === "en" && <>let me choose the answers</>}
       </button>
-        <ExamSheetDrawer
-          isOpen={isDrawerOpen}
-          selectedLanguage={selectedLanguage}
-          setAnswer={setAnswer}
-          onClose={()=>{
-            setIsDrawerOpen(false)
-          }}
-          onSubmit={()=>{
-            setProgress(1)
-            setIsDrawerOpen(false)
-          }}
-        />
+      <ExamSheetDrawer
+        isOpen={isDrawerOpen}
+        selectedLanguage={selectedLanguage}
+        setAnswer={setAnswer}
+        onClose={() => {
+          setIsDrawerOpen(false);
+        }}
+        onSubmit={() => {
+          setProgress(1);
+          setIsDrawerOpen(false);
+        }}
+      />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 export const dialogue = [
   {
     id: "0-ar",
-    text: " ما تسألني ولا سؤال زيادة  انا بنص الفحص وبدي مساعدتك. قدامي 20 سؤال ومالي عرفان شو اضمن طريقة لشلف ",
+    text: "ما تسألني ولا سؤال زيادة  انا بنص الفحص وبدي مساعدتك. قدامي 20 سؤال ومالي عرفان شو اضمن طريقة لشلف ",
   },
   {
     id: "0-en",
@@ -9,7 +9,7 @@ export const dialogue = [
   },
   {
     id: "1-ar",
-    text: "مشكور معلم بس بدك تستوعب انه سؤالي بحد ذاته كان غلط  مافي شي اسمه اضمن طريقة شلف",
+    text: "مشكور يا صاح بس بدك تستوعب انه سؤالي بحد ذاته كان غلط  مافي شي اسمه اضمن طريقة شلف",
   },
   {
     id: "1-en",
@@ -45,7 +45,7 @@ export const dialogue = [
   },
   {
     id: "4-en",
-    text: "Here are the simulation results. You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same mean—meaning they're the same!",
+    text: "Here are the simulation results. You'll find that all guessing strategies have the same distribution, the same standard deviation, and the same meaning they're the same!",
   },
   {
     id: "5-ar",

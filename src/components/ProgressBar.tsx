@@ -1,3 +1,6 @@
+import { GrPowerReset } from "react-icons/gr";
+import { IoLanguageOutline } from "react-icons/io5";
+
 const ProgressBar = ({
   value,
   max,
@@ -10,27 +13,30 @@ const ProgressBar = ({
   return (
     <div className="flex flex-row m-5 items-center gap-3">
       <button className="btn btn-circle" onClick={onClick}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M6 18L18 6M6 6l12 12"
-          />
-        </svg>
+        <GrPowerReset size={23} />
       </button>
 
       <progress
         className="progress progress-info h-4"
         value={value}
         max={max}
-      ></progress>
+      />
+      <div className="dropdown dropdown-end">
+        <div tabIndex={0} role="button" className="btn btn-circle">
+          <IoLanguageOutline size={23} />
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li>
+            <a href="/en">English</a>
+          </li>
+          <li>
+            <a href="/ar">عربي</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

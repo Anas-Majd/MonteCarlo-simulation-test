@@ -2,7 +2,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
 import { HiOutlineDownload } from "react-icons/hi";
 
-const BottomFinale = () => {
+const BottomFinal = ({ selectedLanguage }: { selectedLanguage: string }) => {
   return (
     <div>
       <div className="grid sm:grid-cols-4 grid-cols-2 w-full mb-10 gap-5 sm:gap-10">
@@ -14,13 +14,14 @@ const BottomFinale = () => {
           <FaGithub className="h-8" size={40} />
         </a>
         <a
-          href="./public/assets/Randomized_Answering_Strategies_Enhanced.pdf"
+          href="./public/assets/Research_On_Answering_Strategies.pdf"
           className="button-19 font-swissra font-bold flex items-center gap-2"
           target="_blank"
           download={true}
         >
           <HiOutlineDownload size={20} />
-          البحث
+          {selectedLanguage === "ar" && <p>البحث</p>}
+          {selectedLanguage === "en" && <p>research</p>}
         </a>
         <a
           href="https://www.linkedin.com/in/majd-al-khalaf"
@@ -43,4 +44,4 @@ const BottomFinale = () => {
   );
 };
 
-export default BottomFinale;
+export default BottomFinal;

@@ -1,8 +1,7 @@
 import "./App.css";
 import NormalTextBox from "./components/styles/NormalTextBox";
 import ImportantTextBox from "./components/styles/ImportantTextBox";
-import anas from "../public/assets/imges/anas.svg";
-import majd from "../public/assets/imges/majd.svg";
+import talker from "../public/assets/imges/talker.svg";
 import ProgressBar from "./components/ProgressBar";
 import { useEffect, useMemo, useState } from "react";
 import Calling from "./pages/Calling";
@@ -11,8 +10,8 @@ import { dialogue } from "../public/data/DialogueText";
 import States from "./components/States";
 import OptionsA from "./pages/OptionsA";
 import OptionsB from "./pages/OptionsB";
-import BottomFinale from "./pages/BottomFinal";
 import TopFinal from "./pages/TopFinal";
+import BottomFinal from "./pages/BottomFinal";
 
 export interface Data {
   allTrue: { name: string; value: number }[];
@@ -27,14 +26,18 @@ function App() {
     random: [],
   });
   const [topState, setTopState] = useState("calling");
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [bottomState, setBottomState] = useState("calling");
   const [progress, setProgress] = useState(0);
   const [Answer, setAnswer] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("ar");
   const [selectedTextId, setSelectedTextID] = useState(`0-${selectedLanguage}`);
 
-  //set the states according to the progress the user is at
+  useEffect(() => {
+    if (window.location.href.includes("/en")) {
+      setSelectedLanguage("en");
+    }
+  }, []);
+
   useEffect(() => {
     setSelectedTextID(`${progress}-${selectedLanguage}`);
     if (progress === 0) {
@@ -104,13 +107,6 @@ function App() {
     return dialogue.find((data) => data.id === selectedTextId);
   }, [selectedTextId]);
 
-  useEffect(() => {
-    if (selectedDialog) {
-      console.log(selectedDialog.text);
-    }
-    console.log(selectedTextId);
-  }, [selectedDialog, selectedTextId]);
-
   return (
     <div className="flex flex-col min-h-screen w-full content-start justify-between">
       <ProgressBar
@@ -122,15 +118,15 @@ function App() {
         {topState === "calling" && <Calling Answer={onAnswer} />}
 
         {topState === "talking" && (
-          <div className="flex flex-row-reverse w-full items-end sm:mr-20 mb-5">
-            <img className="sm:w-40 w-24 scale-x-[-1]" src={anas} />
+          <div className="flex flex-row-reverse w-full justify-center items-end sm:mr-20 mb-5">
+            <img className="sm:w-40 w-24 scale-x-[-1]" src={talker} />
             <NormalTextBox>{selectedDialog?.text}</NormalTextBox>
           </div>
         )}
 
         {topState === "important_talking" && (
           <div className="flex flex-row-reverse w-full items-end sm:mr-20">
-            <img className="sm:w-40 w-24" src={majd} />
+            <img className="sm:w-40 w-24  scale-x-[-1]" src={talker} />
             <ImportantTextBox>{selectedDialog?.text}</ImportantTextBox>
           </div>
         )}
@@ -169,11 +165,14 @@ function App() {
               setProgress(Math.floor(progress) + 1);
             }}
           >
-            تابع
+            {selectedLanguage === "ar" && <p>تابع</p>}
+            {selectedLanguage === "en" && <p>continue</p>}
           </button>
         )}
 
-        {bottomState === "final" && <BottomFinale />}
+        {bottomState === "final" && (
+          <BottomFinal selectedLanguage={selectedLanguage} />
+        )}
       </div>
     </div>
   );
