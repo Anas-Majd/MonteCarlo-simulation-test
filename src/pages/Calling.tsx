@@ -1,4 +1,4 @@
-import talker from "/public/assets/imges/talker.svg";
+import anas from "/public/assets/imges/anas.svg";
 import { TextGenerateEffect } from "../components/styles/TextGenerateEffect";
 import { IoCall } from "react-icons/io5";
 
@@ -8,7 +8,7 @@ const Calling = ({ Answer }: { Answer: () => void }) => {
       <div className="text-2xl">
         <TextGenerateEffect words="Dialing...." />
       </div>
-      <img className="w-48 rounded-b-full" src={talker} />
+      <img className="w-48 rounded-b-full" src={anas} />
       <button className="pulse" onClick={Answer}>
         <IoCall size={30} />
       </button>

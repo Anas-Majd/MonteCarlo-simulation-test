@@ -5,12 +5,12 @@ const ProgressBar = ({
   value,
   max,
   onClick,
-  setLanguage
+  setLanguage,
 }: {
   value: string;
   max: string;
   onClick: () => void;
-  setLanguage : Function
+  setLanguage: Function;
 }) => {
   return (
     <div className="flex flex-row m-5 items-center gap-3">
@@ -32,10 +32,24 @@ const ProgressBar = ({
           className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
         >
           <li>
-            <button className ='button-1' onClick={()=>{setLanguage('en')}}>English</button>
+            <button
+              className="button-1"
+              onClick={() => {
+                setLanguage("en");
+              }}
+            >
+              English
+            </button>
           </li>
           <li>
-             <button className ='button-1' onClick={()=>{setLanguage('ar')}}>عربية</button>
+            <button
+              className="button-1"
+              onClick={() => {
+                setLanguage("ar");
+              }}
+            >
+              العربية
+            </button>
           </li>
         </ul>
       </div>

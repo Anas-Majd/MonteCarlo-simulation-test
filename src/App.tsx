@@ -1,7 +1,7 @@
 import "./App.css";
 import NormalTextBox from "./components/styles/NormalTextBox";
 import ImportantTextBox from "./components/styles/ImportantTextBox";
-import talker from "../public/assets/imges/talker.svg";
+import anas from "../public/assets/imges/anas.svg";
 import ProgressBar from "./components/ProgressBar";
 import { useEffect, useMemo, useState } from "react";
 import Calling from "./pages/Calling";
@@ -118,7 +118,7 @@ function App() {
 
         {topState === "talking" && (
           <div className="flex flex-row-reverse w-full justify-center items-end sm:mr-20 mb-5">
-            <img className="sm:w-40 w-24 scale-x-[-1]" src={talker} />
+            <img className="sm:w-40 w-24 scale-x-[-1]" src={anas} />
             <NormalTextBox>{selectedDialog?.text}</NormalTextBox>
           </div>
         )}
@@ -128,7 +128,9 @@ function App() {
             <ImportantTextBox>{selectedDialog?.text}</ImportantTextBox>
           </div>
         )}
-        {topState === "final" && <TopFinal Score={score} selectedLanguage={selectedLanguage} />}
+        {topState === "final" && (
+          <TopFinal Score={score} selectedLanguage={selectedLanguage} />
+        )}
       </div>
 
       <div className="flex flex-row justify-center w-full">
