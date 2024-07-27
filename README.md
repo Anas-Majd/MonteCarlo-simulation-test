@@ -23,9 +23,7 @@ Results:
 The results of the simulation are visualized in three histograms. Each histogram conveys a binomial distribution of scores ranging from 0 to 10, with an average score of 5 and a standard deviation of approximately 1.57. The sample size for the simulation is 1,000,000 trials for each strategy.
 
 sample run of the simulation
-![A graph with numbers and lines
-
-Description automatically generated](Aspose.Words.12a7818f-5320-49e2-be67-7cf4f21e573c.001.png)
+![A graph with numbers and lines Description automatically generated](Aspose.Words.12a7818f-5320-49e2-be67-7cf4f21e573c.001.png)
 \- Histogram 1: Distribution of scores when the strategy is to always guess True.
 \- Histogram 2: Distribution of scores when the strategy is to always guess False.
 \- Histogram 3: Distribution of scores when answers are Random.
