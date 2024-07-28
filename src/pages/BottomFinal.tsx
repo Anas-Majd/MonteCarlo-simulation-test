@@ -14,7 +14,7 @@ const BottomFinal = ({ selectedLanguage }: { selectedLanguage: string }) => {
           <FaGithub className="h-8" size={40} />
         </a>
         <a
-          href="./assets/Research_On_Different_Answering_Strategies.pdf"
+          href="./assets/Evaluating_Guessing_Strategies_in_True_False_Tests_with_Unknown.pdf"
           className="button-19 font-swissra font-bold flex items-center gap-2"
           target="_blank"
         >
@@ -31,7 +31,7 @@ const BottomFinal = ({ selectedLanguage }: { selectedLanguage: string }) => {
           Majd
         </a>
         <a
-          href=""
+          href="https://www.linkedin.com/in/anas-merstani-261ba81ab/"
           className="button-19 font-swissra font-bold flex justify-center items-center gap-2"
           target="_blank"
         >

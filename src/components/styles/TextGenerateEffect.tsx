@@ -5,7 +5,7 @@ import { motion, stagger, useAnimate } from "framer-motion";
 export const TextGenerateEffect = ({
   words = "",
   filter = true,
-  duration = 0.5,
+  duration = 0.3,
 }: {
   words?: string;
   className?: string;
@@ -25,7 +25,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: duration,
-        delay: stagger(0.15),
+        delay: stagger(0.08),
       }
     );
   }, [animate, filter, duration, words, scope]);
