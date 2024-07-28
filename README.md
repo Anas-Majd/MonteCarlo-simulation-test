@@ -1,6 +1,7 @@
 # **The Inexistence of a Superior Strategy When You Have No Indicator of Any Right Answer in a Test**
 
 **_Written by : Anas Al-Merstani_**
+
 **_Peer reviewer: Majd-Alkhalaf_**
 
 ## **Abstract**
@@ -16,7 +17,7 @@ In probability and statistics, understanding the likelihood of various outcomes 
 Monte Carlo simulations are a powerful tool for understanding probabilistic events by running a large number of random trials. In this study, we employ Monte Carlo simulations to analyze different guessing strategies for a test with 10 questions, each having an unknown answer.
 
 Methodology:
-1\. Generate a random number between 0 and 2^{10} - 1 and convert it to binary format to represent the correct answers for the test. Each binary digit (0 or 1) corresponds to False or True, respectively.
+1\. Generate a random number between 0 and 2^10 - 1 and convert it to binary format to represent the correct answers for the test. Each binary digit (0 or 1) corresponds to False or True, respectively.
 2\. Generate another random number in the same range and convert it to binary format to represent a random test taker's answers.
 3\. Compare the test taker's answers to the correct answers.
 4\. Evaluate the strategies of always guessing False (0000000000) and always guessing True (1111111111).
@@ -27,10 +28,12 @@ The results of the simulation are visualized in three histograms. Each histogram
 
 sample run of the simulation
 
-![A graph with numbers and lines Description automatically generated](public/assets/imges/charts.png)
+![](public/assets/imges/charts.png)
 
 \- Histogram 1: Distribution of scores when the strategy is to always guess True.
+
 \- Histogram 2: Distribution of scores when the strategy is to always guess False.
+
 \- Histogram 3: Distribution of scores when answers are Random.
 
 Each histogram shows that the distribution of scores is centered around 5, illustrating that no single strategy significantly outperforms the others.
@@ -45,16 +48,23 @@ To further substantiate the simulation results, we present a mathematical proof 
 Proof:
 For each question in the test, there are four possible outcomes:
 1\. You choose False, the correct answer is True.
+
 2\. You choose False, the correct answer is False.
+
 3\. You choose True, the correct answer is True.
+
 4\. You choose True, the correct answer is False.
 
 Each of these outcomes has an equal probability of 25%. If you choose all True, the outcomes are:
+
 \- You choose True, the correct answer is False (50% probability).
+
 \- You choose True, the correct answer is True (50% probability).
 
 If you choose all False, the outcomes are:
+
 \- You choose False, the correct answer is True (50% probability).
+
 \- You choose False, the correct answer is False (50% probability).
 
 Since the probabilities of each outcome are identical regardless of the strategy chosen, it follows that no single strategy is superior when the answers are unknown.
@@ -93,7 +103,8 @@ The standard deviation (SD) calculated for the binomial distribution is approxim
 
 **_Why the Difference?_**
 
-Although the calculated SD and the SD from the Monte Carlo simulations are very similar, a minor difference exists. This difference can be attributed to the fact that the JavaScript **\*`Math.random`** function is not truly random.\* It generates pseudo-random numbers based on an algorithm. While these numbers are sufficient for most simulations and practical purposes, they do not achieve true randomness. The limitations of `Math.random` include:
+Although the calculated SD and the SD from the Monte Carlo simulations are very similar, a minor difference exists. This difference can be attributed to the fact that the JavaScript `Math.random` function is not truly random.
+It generates pseudo-random numbers based on an algorithm. While these numbers are sufficient for most simulations and practical purposes, they do not achieve true randomness. The limitations of `Math.random` include:
 \- **Predictability**: Given the same initial seed, `Math.random` will produce the same sequence of numbers.
 \- **Uniformity:** While designed to be uniformly distributed, slight biases can occur over many iterations.
 
