@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "homepage": "https://anas-majd.github.io/MonteCarlo-simulation-test/"
+    "homepage": "https://anas-majd.github.io/MonteCarlo-simulation-test"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.2",
