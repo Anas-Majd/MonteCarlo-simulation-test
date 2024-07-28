@@ -1,5 +1,8 @@
 # **The Inexistence of a Superior Strategy When You Have No Indicator of Any Right Answer in a Test**
 
+**_Written by : Anas Al-Merstani_**
+**_Peer reviewer: Majd-Alkhalaf_**
+
 ## **Abstract**
 
 This document demonstrates why no single strategy is superior when dealing with 10 unknown answers in a test. Understanding this concept is crucial in the study of probabilities and statistics, as it illustrates how mathematical principles, though sometimes counterintuitive, are the best tools for predicting outcomes.
@@ -99,3 +102,21 @@ Despite these shortcomings, `Math.random` is adequate for our simulation, provid
 ## **Conclusion**
 
 This study demonstrates that no single guessing strategy is superior when dealing with 10 unknown answers in a test. Both Monte Carlo simulations and a mathematical proof confirm that all strategies fall under the same logic, with each question having a 50% chance of being correct or incorrect, irrespective of the chosen strategy. This finding highlights the importance of probabilistic thinking in understanding outcomes that may initially seem counterintuitive.
+
+# References
+
+Hogg, R. V., & Tanis, E. A. (2015). \*Probability and Statistical Inference\* (9th ed.). Pearson.
+
+Weisstein, E. W. (n.d.). Law of Large Numbers. Retrieved from [MathWorld](https://mathworld.wolfram.com/LawofLargeNumbers.html)
+
+Metropolis, N., & Ulam, S. (1949). The Monte Carlo Method. \*[Journal of the American Statistical Association](https://doi.org/10.1080/01621459.1949.10483310), 44\*(247), 335-341.
+
+Fishman, G. S. (1996). \*Monte Carlo: Concepts, Algorithms, and Applications\*. Springer.
+
+Mozilla Developer Network (MDN). (n.d.). Math.random(). Retrieved from \[[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)\]
+
+Matsumoto, M., & Nishimura, T. (1998). Mersenne Twister: A 623-dimensionally Equidistributed Uniform Pseudo-random Number Generator. \*[ACM Transactions on Modeling and Computer Simulation (TOMACS)](https://doi.org/10.1145/272991.272995), 8\*(1), 3-30.
+
+Feller, W. (1968). \*An Introduction to Probability Theory and Its Applications\* (3rd ed.). Wiley.
+
+Weisstein, E. W. (n.d.). Binomial Distribution. Retrieved from [MathWorld](https://mathworld.wolfram.com/BinomialDistribution.html)
