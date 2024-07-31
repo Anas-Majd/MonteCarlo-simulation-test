@@ -6,14 +6,14 @@ import { FaGithub } from "react-icons/fa6";
 
 export const slides = [
   {
-    id: 0,
+    id: `0`,
     text: {
       ar: "جار الاتصال",
       en: "Dialing",
     },
   },
   {
-    id: 1,
+    id: `1`,
     text: {
       ar: "يا صاح ساعدني، انا بنص الفحص وبدي اشلف ال 10 اسئلة بحيث اضمن اعلى علامة، قلي شو اعمل؟ ",
       en: "No questions Asked! I'm in a test and I need your help. I have 10 true/false questions. What's the best way to ace this?",
@@ -22,10 +22,10 @@ export const slides = [
     buttons: OptionsA,
   },
   {
-    id: 2,
+    id: `2`,
     text: {
       ar: "شكرا يا صاح بس هل في برأيك طريقة لأوصل لأفضل حل بالشلف؟ ",
-      en: "Thanks, but there's no perfect strategy for guessing. My question was flawed.",
+      en: "Thanks, but do you think that an optimized answering pattern exists? one that would be a safer bet",
     },
     type: "normal",
     buttons: [
@@ -46,11 +46,12 @@ export const slides = [
     ],
   },
   {
-    id: 3,
+    id: `3-yes`,
+    //third
     answer: "yes",
     text: {
-      ar: "هممم.. اذا برايك يوجد أستراتيجية أضمن من عشوائية عند الإجابة ؟",
-      en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
+      ar: "هممم.. اذا برايك يوجد أستراتيجية أضمن من العشوائية عند الإجابة عندما لا يوجد أي دليل على الإجابة الصحيحة؟",
+      en: "So you believe that a strategy that yields better outcome than randomizing exists?",
     },
     type: "normal",
     buttons: [
@@ -64,7 +65,8 @@ export const slides = [
     ],
   },
   {
-    id: 4,
+    //third
+    id: `3-no`,
     answer: "no",
     text: {
       ar: "هممم... ألا تظن أنه اذا وحدت أجوبتي أو اذا اتبعت نمطاً معينا سأضمن علامة أعلى؟",
@@ -82,17 +84,17 @@ export const slides = [
     ],
   },
   {
-    id: 5,
+    id: `4-yes`,
     answer: "yes",
     text: {
-      ar: "ماذا برأيك سيكون نمط الاجابة ضمن هذه الاستراتيجية.",
+      ar: "إذا يوجد نمط اجابة معين سيعطينا توقع أكبر للنتائج المحتملة",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
     },
     type: "normal",
     buttons: [
       {
         text: {
-          ar: "بالتأكيد وما الغريب فيما أقوله",
+          ar: "بالتحديد",
           en: "continue",
         },
         class: "button-outline font-swissra font-bold mx-3 mb-10",
@@ -100,7 +102,7 @@ export const slides = [
     ],
   },
   {
-    id: 6,
+    id: `4-no`,
     answer: "no",
     text: {
       ar: "أنا أعلم أن احتمال أن تكون الإجابة (صح) لكل سؤال هي 1/2 فنقول تقريبا أن 5 اسئلة من أصل عشرة ستكون إجابتها (صح) فإذا قمت بتوحيد اجابتي لصح فسأضمن تقريبا نص العلامة ",
@@ -161,7 +163,7 @@ export const slides = [
   {
     id: 9,
     text: {
-      ar: "  تُستخدم في مجالات مثل الفيزياء، الاقتصاد، الهندسة، والبحوث الطبية لتحليل الأنظمة المعقدة وتقدير المخاطر. تم تطويرها خلال الحرب العالمية الثانية بواسطة ستانيسلو أولام وجون فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن مع اوبنهايمر",
+      ar: "  تُستخدم في مجالات مثل الفيزياء، الاقتصاد، الهندسة، والبحوث الطبية لتحليل الأنظمة المعقدة وتوقع نتائجها. طورها ستانيسلو أولام وجون فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن",
       en: "Monte Carlo simulation, by von Neumann, uses your device's power for loads of random simulations to predict outcomes.",
     },
     type: "normal",
@@ -178,7 +180,7 @@ export const slides = [
   {
     id: 10,
     text: {
-      ar: " ببساطة تقوم هذه الطريقة بالاستفادة من قدرات المعالج لتقوم بمحاكاة التجربة المقترحة على عدد كبير من المرات وتكون نتائجها مشابهة للنتائج الحقيقية وفي حالتنا ستعطينا توزيع للنتائج وكم مرى تكررت ",
+      ar: " ببساطة تقوم هذه الطريقة بالاستفادة من قدرات المعالج لتقوم بمحاكاة التجربة المقترحة على عدد كبير من المرات وتكون نتائجها مشابهة للنتائج الحقيقية وفي حالتنا ستعطينا توزيع للنتائج وكم مرة تكررت ",
       en: "Here are the results. All guessing strategies? Same distribution, standard deviation, and mean. They're equal!",
     },
     type: "normal",
@@ -195,7 +197,7 @@ export const slides = [
   {
     id: 11,
     text: {
-      ar: "هي نتائج المحاكة يلي قام فيها جهازك واذا عبالك تتطلع على آلية عملها فهي موجودة في البحث الموجود آخر الموقع حتلاحظ معي انه كل الاستارتيجيات بتولد نفس التوزيع ونفس الانحراف المعياري نفس المتوسط أي نفس التوقع",
+      ar: "أمامك نتائج المحاكة التي قام بها جهازك واذا كان لديك فضول لمعرفة آلية عملها فهي موجودة في البحث الموجود آخر الموقع. لاحظ معي أن كل الاستارتيجيات تولد نفس التوزيع ونفس الانحراف المعياري و نفس المتوسط أي نفس التوقع",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
     },
     type: "normal",
