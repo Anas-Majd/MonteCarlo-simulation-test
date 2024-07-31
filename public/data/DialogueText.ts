@@ -6,14 +6,14 @@ import { FaGithub } from "react-icons/fa6";
 
 export const slides = [
   {
-    id: `0`,
+    id: 0,
     text: {
       ar: "جار الاتصال",
       en: "Dialing",
     },
   },
   {
-    id: `1`,
+    id: 1,
     text: {
       ar: "يا صاح ساعدني، انا بنص الفحص وبدي اشلف ال 10 اسئلة بحيث اضمن اعلى علامة، قلي شو اعمل؟ ",
       en: "No questions Asked! I'm in a test and I need your help. I have 10 true/false questions. What's the best way to ace this?",
@@ -22,7 +22,7 @@ export const slides = [
     buttons: OptionsA,
   },
   {
-    id: `2`,
+    id: 2,
     text: {
       ar: "شكرا يا صاح بس هل في برأيك طريقة لأوصل لأفضل حل بالشلف؟ ",
       en: "Thanks, but there's no perfect strategy for guessing. My question was flawed.",
@@ -46,9 +46,10 @@ export const slides = [
     ],
   },
   {
-    id: `3-yes`,
+    id: 3,
+    answer: "yes",
     text: {
-      ar: "هممم.. اذا برايك يوجد أستراتيجية أضمن من عشوائية عند الإجابة ",
+      ar: "هممم.. اذا برايك يوجد أستراتيجية أضمن من عشوائية عند الإجابة ؟",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
     },
     type: "normal",
@@ -56,14 +57,15 @@ export const slides = [
       {
         text: {
           ar: "بالتأكيد وما الغريب فيما أقوله",
-          en: "continue",
+          en: "absolutely",
         },
-        class: "button-19 font-swissra font-bold mx-3 mb-10",
+        class: "button-outline font-swissra font-bold mx-3 mb-10",
       },
     ],
   },
   {
-    id: `3-no`,
+    id: 4,
+    answer: "no",
     text: {
       ar: "هممم... ألا تظن أنه اذا وحدت أجوبتي أو اذا اتبعت نمطاً معينا سأضمن علامة أعلى؟",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
@@ -72,17 +74,18 @@ export const slides = [
     buttons: [
       {
         text: {
-          ar: "ماالذي يدفعك للتفكير بهذا الشكل؟",
+          ar: "ما الذي يدفعك للتفكير بهذا الشكل؟",
           en: "continue",
         },
-        class: "button-19 font-swissra font-bold mx-3 mb-10",
+        class: "button-outline font-swissra font-bold mx-3 mb-10",
       },
     ],
   },
   {
-    id: `4-yes`,
+    id: 5,
+    answer: "yes",
     text: {
-      ar: "ماذا برأيك سيكون نمط الاجابة ضمن هذه الاستراتيجية",
+      ar: "ماذا برأيك سيكون نمط الاجابة ضمن هذه الاستراتيجية.",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
     },
     type: "normal",
@@ -92,14 +95,15 @@ export const slides = [
           ar: "بالتأكيد وما الغريب فيما أقوله",
           en: "continue",
         },
-        class: "button-19 font-swissra font-bold mx-3 mb-10",
+        class: "button-outline font-swissra font-bold mx-3 mb-10",
       },
     ],
   },
   {
-    id: `4-no`,
+    id: 6,
+    answer: "no",
     text: {
-      ar: "أنا أعلم أن احتمال أن تكون الإجابة (صح) لكل سؤال هي النصف فنقول تقريبا أن خمس اسالة من أصل عشرة ستكون إجابتها (صح) فإذا قمت بتوحيد اجابتي لصح فسأضمن ما يقارب نصف العلامة ",
+      ar: "أنا أعلم أن احتمال أن تكون الإجابة (صح) لكل سؤال هي 1/2 فنقول تقريبا أن 5 اسئلة من أصل عشرة ستكون إجابتها (صح) فإذا قمت بتوحيد اجابتي لصح فسأضمن تقريبا نص العلامة ",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
     },
     type: "normal",
@@ -107,22 +111,23 @@ export const slides = [
       {
         text: {
           ar: "أقنعني كلامك",
-          en: "continue",
+          en: "I'm Convinced",
         },
         class: "button-19 font-swissra font-bold mx-3 mb-10",
-      },{
-        text :{
-          ar: "يوجد غلط في المنطق المستخدم",
-          en: "",
+      },
+      {
+        text: {
+          ar: "منطقك خاطئ",
+          en: "Logic is Wrong",
         },
-        class: 'button-19 fonst'
-      }
+        class: "button-outline font-swissra font-bold mx-3 mb-10",
+      },
     ],
   },
   {
-    id: `5`,
+    id: 7,
     text: {
-      ar: "أظن أن وجهة نظرك مثيرة للأهتمام وتستحق التجربة , لذلك سنختبرها باستخدام طريقة المونت كارلو",
+      ar: "أظن أن وجهة نظرك مثيرة للأهتمام وتستحق التجربة , لذلك سنختبرها باستخدام طريقة المونتي كارلو",
       en: "But guess what? Your device will prove it wrong! It'll run a Monte Carlo simulation to show the results.",
     },
     type: "normal",
@@ -137,7 +142,7 @@ export const slides = [
     ],
   },
   {
-    id: `6`,
+    id: 8,
     text: {
       ar: "طريقة المونت كارلو هي تقنية إحصائية نستخدمها لنرى النتائج المحتملة لتجربة ولحساب توقع كل نتيجة منها  ",
       en: "But guess what? Your device will prove it wrong! It'll run a Monte Carlo simulation to show the results.",
@@ -154,24 +159,24 @@ export const slides = [
     ],
   },
   {
-    id: `7`,
+    id: 9,
     text: {
-      ar:" تُستخدم في مجالات مثل الفيزياء، الاقتصاد، الهندسة، والبحوث الطبية لتحليل الأنظمة المعقدة وتقدير المخاطر. تم تطويرها خلال الحرب العالمية الثانية بواسطة ستانيسلو أولام وجون فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن",
+      ar: "  تُستخدم في مجالات مثل الفيزياء، الاقتصاد، الهندسة، والبحوث الطبية لتحليل الأنظمة المعقدة وتقدير المخاطر. تم تطويرها خلال الحرب العالمية الثانية بواسطة ستانيسلو أولام وجون فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن مع اوبنهايمر",
       en: "Monte Carlo simulation, by von Neumann, uses your device's power for loads of random simulations to predict outcomes.",
     },
     type: "normal",
     buttons: [
       {
         text: {
-          ar: " ؟ ما آلية عملها",
+          ar: "ما آلية عملها ؟",
           en: "Show me the results",
         },
-        class: "button-19 font-swissra font-bold mx-3 mb-10",
+        class: "button-outline font-swissra font-bold mx-3 mb-10",
       },
     ],
   },
   {
-    id: `8`,
+    id: 10,
     text: {
       ar: " ببساطة تقوم هذه الطريقة بالاستفادة من قدرات المعالج لتقوم بمحاكاة التجربة المقترحة على عدد كبير من المرات وتكون نتائجها مشابهة للنتائج الحقيقية وفي حالتنا ستعطينا توزيع للنتائج وكم مرى تكررت ",
       en: "Here are the results. All guessing strategies? Same distribution, standard deviation, and mean. They're equal!",
@@ -183,11 +188,12 @@ export const slides = [
           ar: "أرني نتائج المحاكاة",
           en: "continue",
         },
-        class: "button-outline font-swissra font-bold my-4 ml-4",
+        class: "button-outline font-swissra font-bold mb-10",
       },
     ],
-  },{
-  id: `9`,
+  },
+  {
+    id: 11,
     text: {
       ar: "هي نتائج المحاكة يلي قام فيها جهازك واذا عبالك تتطلع على آلية عملها فهي موجودة في البحث الموجود آخر الموقع حتلاحظ معي انه كل الاستارتيجيات بتولد نفس التوزيع ونفس الانحراف المعياري نفس المتوسط أي نفس التوقع",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
@@ -200,12 +206,12 @@ export const slides = [
           ar: "تابع",
           en: "continue",
         },
-        class: "button-19 font-swissra font-bold mx-3 mb-10",
+        class: "button-outline font-swissra font-bold ml-4 my-4",
       },
     ],
   },
   {
-    id: `10`,
+    id: 12,
     text: { ar: "طيب، شو هلق؟", en: "So, now what? Listen up..." },
     type: "important",
     buttons: [
@@ -219,7 +225,7 @@ export const slides = [
     ],
   },
   {
-    id: `11`,
+    id: 13,
     text: {
       ar: "لا تراهن على الحظ. اشتغل بجد وادرس. ما في اختصارات!",
       en: "Don't gamble with your success. Do the hard work. Study. No shortcuts!",
@@ -236,11 +242,7 @@ export const slides = [
     ],
   },
   {
-    id: `12`,
-    text: {
-      ar: "",
-      en: "Randomness is all around you, working against you. If you keep playing its game, you will eventually lose. Don't fall for the safety trap. Do the hard work. Study. Be virtuous. Be better than me.",
-    },
+    id: 14,
     type: "final",
   },
 ];
@@ -256,7 +258,7 @@ export const finalButtons = [
     class:
       "button-outline font-swissra font-bold flex items-center justify-center gap-2",
     icon: HiOutlineDownload,
-    text: "research",
+    text: "Research",
   },
   {
     href: "https://www.linkedin.com/in/majd-al-khalaf",

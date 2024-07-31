@@ -20,7 +20,6 @@ function App() {
   });
   const [score, setScore] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [currentSlideID,setCurrentSlideID] =useState(`0`)
   const [selectedLanguage, setSelectedLanguage] = useState("ar");
 
   useEffect(() => {
@@ -44,7 +43,7 @@ function App() {
   };
 
   const selectedSlide = useMemo(
-    () => slides.find(slide=>(slide.id===`${currentSlideID}`)) as Slide,
+    () => slides.find((slide) => slide.id === currentSlide) as Slide,
     [currentSlide]
   );
 
@@ -54,12 +53,12 @@ function App() {
       className="flex flex-col min-h-screen w-full content-start justify-between"
     >
       <ProgressBar
-        value={`${currentSlide}`}
+        value={currentSlide}
         max={slides.length - 1}
         onClick={onResetClick}
         setLanguage={setSelectedLanguage}
       />
-      
+
       <Slide
         selectedSlide={selectedSlide}
         selectedLanguage={selectedLanguage}

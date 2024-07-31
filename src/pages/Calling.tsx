@@ -11,7 +11,7 @@ const Calling = ({
 }) => {
   return (
     <div className="flex flex-col gap-10 w-full items-center">
-      <div className="text-2xl">
+      <div className="text-2xl font-cairo">
         <TextGenerateEffect
           words={selectedLanguage === "ar" ? "...جار الاتصال" : "Dialing...."}
         />

@@ -17,7 +17,7 @@ const NormalTextBox = ({ children }: { children?: string }) => {
           dir={isArabic ? "rtl" : "ltr"}
           className={
             isArabic
-              ? "font-swissra font-normal tracking-wide leading-loose"
+              ? "font-cairo font-semibold tracking-wide leading-loose"
               : "font-medium font-sans tracking-wide leading-loose"
           }
         >

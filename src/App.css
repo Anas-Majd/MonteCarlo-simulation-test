@@ -107,11 +107,12 @@
    font-family: 'Swissra';
    src: url('../public/assets/fonts/alfont_com_AlFont_com_Swissra-Bold.otf') format('opentype');
    font-weight: bold;
-   font-style: normal;
+   font-style: bold;
  }
  
  .font-swissra {
    font-family: 'Swissra', sans-serif;
+   font-variant-numeric: oldstyle-nums;
  }
 
 .content-center {

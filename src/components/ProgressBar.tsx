@@ -7,7 +7,7 @@ const ProgressBar = ({
   onClick,
   setLanguage,
 }: {
-  value: string;
+  value: number;
   max: number;
   onClick: () => void;
   setLanguage: Function;

@@ -15,7 +15,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
         onClick={() => {
           setIsDrawerOpen(true);
         }}
-        className="button-19 font-swissra font-bold"
+        className="button-19 w-60 font-swissra font-bold"
       >
         {selectedLanguage === "ar" && <>دعني أنتقي الإجابات بيدي</>}
         {selectedLanguage === "en" && <>let me choose the answers</>}
@@ -25,7 +25,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
           setAnswer("1111111111");
           setProgress(2);
         }}
-        className="button-outline  font-swissra font-bold"
+        className="button-outline  w-60  font-swissra font-bold"
       >
         {selectedLanguage === "ar" && <p>إنتقي "صحيح" لكل الإجابات</p>}
         {selectedLanguage === "en" && <p>pick True for all questions</p>}
@@ -35,7 +35,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
           setAnswer("0000000000");
           setProgress(2);
         }}
-        className="button-outline  font-swissra font-bold"
+        className="button-outline w-60 font-swissra font-bold"
       >
         {selectedLanguage === "ar" && <>إنتقي "خاطئ" لكل الإجابات</>}
         {selectedLanguage === "en" && <>pick False for all questions</>}

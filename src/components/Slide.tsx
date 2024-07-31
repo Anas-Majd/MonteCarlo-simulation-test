@@ -48,7 +48,7 @@ const Slide = ({
         <TopFinal Score={score} selectedLanguage={selectedLanguage} />
       )}
       <div className="flex flex-row justify-between">
-        {selectedSlide.id === `0` && (
+        {selectedSlide.id === 0 && (
           <Calling selectedLanguage={selectedLanguage} Answer={onAnswer} />
         )}
 
@@ -60,9 +60,9 @@ const Slide = ({
             </NormalTextBox>
           </div>
         )}
-        
+
         {selectedSlide.type === "important" && (
-          <div className="flex flex-row-reverse w-full justify-center items-end sm:mr-20 mb-5">
+          <div className="flex flex-row-reverse w-full justify-center  items-end sm:mr-20 mb-5">
             <img className="sm:w-40 w-24 scale-x-[-1]" src={anas} />
             <ImportantTextBox>
               {selectedSlide.text[selectedLanguage as "ar" | "en"]}
