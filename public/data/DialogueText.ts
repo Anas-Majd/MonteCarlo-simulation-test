@@ -35,6 +35,7 @@ export const slides = [
           en: "I don't think so",
         },
         class: "button-outline font-swissra font-bold mx-3 mb-10",
+        add:`yes`
       },
       {
         text: {
@@ -42,6 +43,7 @@ export const slides = [
           en: "Maybe",
         },
         class: "button-19 font-swissra font-bold mx-3 mb-10",
+        add:`no`
       },
     ],
   },
@@ -127,7 +129,7 @@ export const slides = [
     ],
   },
   {
-    id: 7,
+    id: `5`,
     text: {
       ar: "أظن أن وجهة نظرك مثيرة للأهتمام وتستحق التجربة , لذلك سنختبرها باستخدام طريقة المونتي كارلو",
       en: "But guess what? Your device will prove it wrong! It'll run a Monte Carlo simulation to show the results.",
@@ -144,7 +146,7 @@ export const slides = [
     ],
   },
   {
-    id: 8,
+    id: `6`,
     text: {
       ar: "طريقة المونت كارلو هي تقنية إحصائية نستخدمها لنرى النتائج المحتملة لتجربة ولحساب توقع كل نتيجة منها  ",
       en: "But guess what? Your device will prove it wrong! It'll run a Monte Carlo simulation to show the results.",
@@ -161,7 +163,7 @@ export const slides = [
     ],
   },
   {
-    id: 9,
+    id: `7`,
     text: {
       ar: "حتلاقيها بأغلب المجالات والبحوث، لتحليل الأنظمة المعقدة وتقدير المخاطر. تم تطويرها بواسطة أولام و فون نيومان (مخترع بنيان الحاسوب) في مشروع مانهاتن مع اوبنهايمر",
       en: "Monte Carlo simulation, by von Neumann, uses your device's power for loads of random simulations to predict outcomes.",
@@ -178,7 +180,7 @@ export const slides = [
     ],
   },
   {
-    id: 10,
+    id: `8`,
     text: {
       ar: " ببساطة تقوم هذه الطريقة بالاستفادة من قدرات المعالج لتقوم بمحاكاة التجربة المقترحة على عدد كبير من المرات وتكون نتائجها مشابهة للنتائج الحقيقية وفي حالتنا ستعطينا توزيع للنتائج وكم مرة تكررت ",
       en: "Here are the results. All guessing strategies? Same distribution, standard deviation, and mean. They're equal!",
@@ -195,7 +197,7 @@ export const slides = [
     ],
   },
   {
-    id: 11,
+    id: `9`,
     text: {
       ar: "أمامك نتائج المحاكة التي قام بها جهازك واذا كان لديك فضول لمعرفة آلية عملها فهي موجودة في البحث الموجود آخر الموقع. لاحظ معي أن كل الاستارتيجيات تولد نفس التوزيع ونفس الانحراف المعياري و نفس المتوسط أي نفس التوقع",
       en: "Many think choosing all true or all false guarantees half correct. Random answers? You could get zero!",
@@ -213,7 +215,7 @@ export const slides = [
     ],
   },
   {
-    id: 12,
+    id: `10`,
     text: {
       ar: "ولأنو نفس التوقع، فهي التجربة على عدد اسئلة كبير اي طريقة شلف هي متشابهة",
       en: "So, now what? Listen up...",
@@ -230,7 +232,7 @@ export const slides = [
     ],
   },
   {
-    id: 13,
+    id: `11`,
     text: {
       ar: " مشان هيك لا تراهن على الحظ. اشتغل بجد وادرس. ما في اختصارات والشلف ما بيشتغل",
       en: "Don't gamble with your success. Do the hard work. Study. No shortcuts!",
@@ -247,7 +249,7 @@ export const slides = [
     ],
   },
   {
-    id: 14,
+    id: `12`,
     type: "final",
   },
 ];
