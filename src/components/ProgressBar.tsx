@@ -66,8 +66,8 @@ const ProgressBar = ({
         <div className="modal-box">
           <h3 className="font-bold text-lg ">Inspired by</h3>
           <ul className=" list-disc px-4">
-            <li> a talk with a close friend</li>
-            <li>Taleb Nassem book "Fooled by randomness"</li>
+            <li> A conversation with a close friend</li>
+            <li> Taleb Nassem's book "Fooled by Randomness"</li>
           </ul>
           <div className="modal-action">
             <form method="dialog">

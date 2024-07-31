@@ -20,6 +20,7 @@ function App() {
   });
   const [score, setScore] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlideID,setCurrentSlideID] =useState(`0`)
   const [selectedLanguage, setSelectedLanguage] = useState("ar");
 
   useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
   };
 
   const selectedSlide = useMemo(
-    () => slides[currentSlide] as Slide,
+    () => slides.find(slide=>(slide.id===`${currentSlideID}`)) as Slide,
     [currentSlide]
   );
 
@@ -58,7 +59,7 @@ function App() {
         onClick={onResetClick}
         setLanguage={setSelectedLanguage}
       />
-
+      
       <Slide
         selectedSlide={selectedSlide}
         selectedLanguage={selectedLanguage}
