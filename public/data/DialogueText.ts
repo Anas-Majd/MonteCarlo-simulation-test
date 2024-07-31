@@ -163,7 +163,7 @@ export const slides = [
   {
     id: 9,
     text: {
-      ar: "  تُستخدم في مجالات مثل الفيزياء، الاقتصاد، الهندسة، والبحوث الطبية لتحليل الأنظمة المعقدة وتوقع نتائجها. طورها ستانيسلو أولام وجون فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن",
+      ar: "حتلاقيها بأغلب المجالات والبحوث، لتحليل الأنظمة المعقدة وتقدير المخاطر. تم تطويرها بواسطة أولام و فون نيومان (مخترع بنيان الحاسوب) في مشروع مانهاتن مع اوبنهايمر",
       en: "Monte Carlo simulation, by von Neumann, uses your device's power for loads of random simulations to predict outcomes.",
     },
     type: "normal",
@@ -214,7 +214,10 @@ export const slides = [
   },
   {
     id: 12,
-    text: { ar: "طيب، شو هلق؟", en: "So, now what? Listen up..." },
+    text: {
+      ar: "ولأنو نفس التوقع، فهي التجربة على عدد اسئلة كبير اي طريقة شلف هي متشابهة",
+      en: "So, now what? Listen up...",
+    },
     type: "important",
     buttons: [
       {
@@ -229,7 +232,7 @@ export const slides = [
   {
     id: 13,
     text: {
-      ar: "لا تراهن على الحظ. اشتغل بجد وادرس. ما في اختصارات!",
+      ar: " مشان هيك لا تراهن على الحظ. اشتغل بجد وادرس. ما في اختصارات والشلف ما بيشتغل",
       en: "Don't gamble with your success. Do the hard work. Study. No shortcuts!",
     },
     type: "important",

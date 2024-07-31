@@ -12,9 +12,9 @@ const TopFinal = ({
 }) => {
   return (
     <div className="flex flex-col gap-6 mb-5">
-      <div className="flex flex-col w-full justify-center items-center gap-10">
+      <div className="flex font-cairo font-bold flex-col w-full justify-center items-center gap-10">
         <div className="stats shadow">
-          <div className="stat w-full">
+          <div className="flex flex-col stat w-full  justify-center items-center ">
             <div className="stat-title">
               {selectedLanguage === "en" && <p>You Scored</p>}
               {selectedLanguage === "ar" && <p>نتيجتك كانت</p>}
