@@ -1,22 +1,34 @@
+import { FaAngleRight } from "react-icons/fa6";
 import { Data } from "../App";
-import MyChart from "./styles/Chart";
+import MyChart from "./sideComponents/Chart";
+import { useRef } from "react";
 
 interface Props {
-  setProgress: (n: number) => void;
   data: Data;
-  selectedLanguage: string;
 }
-const States = ({ setProgress, data, selectedLanguage }: Props) => {
+
+const States = ({ data }: Props) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  const scrollToRight = () => {
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
+        left: containerRef.current.scrollWidth,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <div className="flex overflow-x-auto space-x-4 m-5 sm:gap-6">
+    <div
+      className="flex overflow-x-auto space-x-4 m-5 sm:gap-6"
+      ref={containerRef}
+    >
       <button
-        className="button-19 font-swissra font-bold"
-        onClick={() => {
-          setProgress(5);
-        }}
+        className="right-6 opacity-80 z-10 bottom-40 border-slate-400 border-2 sm:hidden absolute btn btn-circle font-swissra font-bold ml-4"
+        onClick={scrollToRight}
       >
-        {selectedLanguage === "ar" && <>تابع</>}
-        {selectedLanguage === "en" && <>continue</>}
+        <FaAngleRight size={23} />
       </button>
       <div className="flex-none w-72 p-4 border-2 border-slate-500 border-dashed shadow rounded-lg">
         <h2 className="text-xl font-semibold mb-2">All True</h2>

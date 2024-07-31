@@ -5,33 +5,12 @@ interface Props {
   setProgress: (n: number) => void;
   selectedLanguage: string;
   setAnswer: (s: string) => void;
-  onDrawerClose: () => void;
 }
 
 const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   return (
     <div className="flex sm:flex-row flex-col justify-around items-center gap-5  h-full px-10 mb-10">
-      <button
-        onClick={() => {
-          setAnswer("1111111111");
-          setProgress(1);
-        }}
-        className="button-19 font-swissra font-bold"
-      >
-        {selectedLanguage === "ar" && <p>إنتقي "صحيح" لكل الإجابات</p>}
-        {selectedLanguage === "en" && <p>pick True for all questions</p>}
-      </button>
-      <button
-        onClick={() => {
-          setAnswer("0000000000");
-          setProgress(1);
-        }}
-        className="button-19 font-swissra font-bold"
-      >
-        {selectedLanguage === "ar" && <>إنتقي "خاطئ" لكل الإجابات</>}
-        {selectedLanguage === "en" && <>pick False for all questions</>}
-      </button>
       <button
         onClick={() => {
           setIsDrawerOpen(true);
@@ -41,6 +20,26 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
         {selectedLanguage === "ar" && <>دعني أنتقي الإجابات بيدي</>}
         {selectedLanguage === "en" && <>let me choose the answers</>}
       </button>
+      <button
+        onClick={() => {
+          setAnswer("1111111111");
+          setProgress(2);
+        }}
+        className="button-outline  font-swissra font-bold"
+      >
+        {selectedLanguage === "ar" && <p>إنتقي "صحيح" لكل الإجابات</p>}
+        {selectedLanguage === "en" && <p>pick True for all questions</p>}
+      </button>
+      <button
+        onClick={() => {
+          setAnswer("0000000000");
+          setProgress(2);
+        }}
+        className="button-outline  font-swissra font-bold"
+      >
+        {selectedLanguage === "ar" && <>إنتقي "خاطئ" لكل الإجابات</>}
+        {selectedLanguage === "en" && <>pick False for all questions</>}
+      </button>
       <ExamSheetDrawer
         isOpen={isDrawerOpen}
         selectedLanguage={selectedLanguage}
@@ -49,7 +48,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
           setIsDrawerOpen(false);
         }}
         onSubmit={() => {
-          setProgress(1);
+          setProgress(2);
           setIsDrawerOpen(false);
         }}
       />
