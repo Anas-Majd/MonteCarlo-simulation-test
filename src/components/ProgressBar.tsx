@@ -20,7 +20,7 @@ const ProgressBar = ({
       <progress
         className="progress progress-info h-4 w-[60vw]"
         value={value}
-        max={max}
+        max={max-2}
       />
       <div className="dropdown dropdown-end">
         <div tabIndex={0} role="button" className="btn btn-circle">

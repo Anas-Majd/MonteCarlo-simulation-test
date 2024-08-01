@@ -49,7 +49,7 @@ const Slide = ({
         <TopFinal Score={score} selectedLanguage={selectedLanguage} />
       )}
       <div className="flex flex-row justify-between">
-        {selectedSlide.id === `0` && (
+        {selectedSlide.id === 0 && (
           <Calling selectedLanguage={selectedLanguage} Answer={onAnswer} />
         )}
 

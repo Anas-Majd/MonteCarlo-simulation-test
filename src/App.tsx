@@ -51,7 +51,7 @@ const onRemove = () =>{
   };
 
   const selectedSlide = useMemo(
-    () => slides.find((slide) => slide.id === `${currentSlide}${pickedAnswer}`) as Slide,
+    () => slides.find((slide) => slide.name === `${currentSlide}${pickedAnswer}`) as Slide,
     [currentSlide]
   );
 

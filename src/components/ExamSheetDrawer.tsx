@@ -31,10 +31,10 @@ const ExamSheetDrawer = ({
       } transition-transform duration-300 ease-in-out`}
     >
       <div className="absolute inset-0" onClick={onClose}></div>
-      <div className="absolute right-0 w-80 h-full bg-white shadow-lg p-4">
+      <div className="absolute right-0 w-80 h-full bg-white shadow-lg p-4 rounded-tl-2xl rounded-bl-2xl">
         <ul className="flex flex-col items-center justify-center bg-white text-base-content min-h-full w-72 p-20 gap-10 ">
-          <div className="bg-red-300 rounded-xl w-52 outline-8 outline-red-600  ">
-            <div className="flex justify-between w-full px-14  bg-red-600  rounded-xl rounded-b-none text-black font-bold">
+          <div className="bg-red-300 rounded-xl w-52 outline-4 outline-black outline">
+            <div className="flex justify-between w-full h-7 px-14  bg-red-600  rounded-xl rounded-b-none text-black font-bold">
               <p>✓</p>
               <p>✗</p>
             </div>
