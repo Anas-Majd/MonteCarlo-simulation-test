@@ -159,7 +159,7 @@ export const slides = [
     name:`6`,
     text: {
       ar: "طريقة المونت كارلو هي تقنية إحصائية نستخدمها لنرى النتائج المحتملة لتجربة ولحساب احتمال كل نتيجة منها",
-      en: "The Monte Carlo method is a statistical technique we use to compute possible outcomes of an experiment and calculate theere probability.",
+      en: "The Monte Carlo method is a statistical technique we use to compute possible outcomes of an experiment and calculate its probability.",
     },
     type: "normal",
     buttons: [
