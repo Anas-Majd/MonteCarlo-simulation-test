@@ -17,7 +17,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
         }}
         className="button-19 w-60 font-swissra font-bold"
       >
-        {selectedLanguage === "ar" && <>دعني أنتقي الإجابات بيدي</>}
+        {selectedLanguage === "ar" && <>دعني انتقي الإجابات بيدي</>}
         {selectedLanguage === "en" && <>Let me choose the answers</>}
       </button>
       <button
@@ -27,7 +27,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
         }}
         className="button-outline  w-60  font-swissra font-bold"
       >
-        {selectedLanguage === "ar" && <p>إنتقي "صحيح" لكل الإجابات</p>}
+        {selectedLanguage === "ar" && <p>انتقي "صحيح" لكل الإجابات</p>}
         {selectedLanguage === "en" && <p>Pick True for all questions</p>}
       </button>
       <button
@@ -37,7 +37,7 @@ const OptionsA = ({ setProgress, selectedLanguage, setAnswer }: Props) => {
         }}
         className="button-outline w-60 font-swissra font-bold"
       >
-        {selectedLanguage === "ar" && <>إنتقي "خاطئ" لكل الإجابات</>}
+        {selectedLanguage === "ar" && <>انتقي "خاطئ" لكل الإجابات</>}
         {selectedLanguage === "en" && <>Pick False for all questions</>}
       </button>
       <ExamSheetDrawer

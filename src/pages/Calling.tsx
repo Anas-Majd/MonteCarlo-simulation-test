@@ -17,8 +17,14 @@ const Calling = ({
         />
       </div>
       <img className="w-48 rounded-b-full" src={anas} />
-      <button className="pulse" onClick={Answer}>
-        <IoCall size={30} />
+      <button
+        className="button-outline bg-green-700 text-neutral-100 hover:bg-green-600 gap-5 font-cairo font-bold"
+        onClick={Answer}
+      >
+        <IoCall size={25} />
+        {selectedLanguage === "ar"
+          ? "انقر للإجابة على صديقك"
+          : "Click to Answer your friend"}
       </button>
     </div>
   );

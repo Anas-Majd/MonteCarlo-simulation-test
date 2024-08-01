@@ -18,7 +18,7 @@ function App() {
     allFalse: [],
     random: [],
   });
-  const[pickedAnswer,setPickedAnswer] = useState(``)
+  const [pickedAnswer, setPickedAnswer] = useState(``);
   const [score, setScore] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedLanguage, setSelectedLanguage] = useState("ar");
@@ -34,24 +34,27 @@ function App() {
   const onNextSlide = () => {
     setCurrentSlide((prev) => prev + 1);
   };
-  const onAddClick= (add : string) =>{
-    setPickedAnswer(`-${add}`)
-    setCurrentSlide((prev) => prev + 1 )
-  }
+  const onAddClick = (add: string) => {
+    setPickedAnswer(`-${add}`);
+    setCurrentSlide((prev) => prev + 1);
+  };
   const onAnswer = () => {
     setCurrentSlide(1);
   };
-const onRemove = () =>{
-  setPickedAnswer(``)
-  setCurrentSlide((prev)=> prev +1)
-}
+  const onRemove = () => {
+    setPickedAnswer(``);
+    setCurrentSlide((prev) => prev + 1);
+  };
   const onResetClick = () => {
-    setPickedAnswer(``)
+    setPickedAnswer(``);
     setCurrentSlide(0);
   };
 
   const selectedSlide = useMemo(
-    () => slides.find((slide) => slide.name === `${currentSlide}${pickedAnswer}`) as Slide,
+    () =>
+      slides.find(
+        (slide) => slide.name === `${currentSlide}${pickedAnswer}`
+      ) as Slide,
     [currentSlide]
   );
 
@@ -93,21 +96,34 @@ const onRemove = () =>{
           </>
         ) : (
           selectedSlide.buttons?.map((button, index) => {
-            if(currentSlide === 2) return(
-            <button key={index} className={button.class} onClick={()=>onAddClick(button.add)}>
-              {button.text[selectedLanguage as "ar" | "en"]}
-            </button>)
-          else if  (currentSlide === 4) return(
-            <button key={index} className={button.class} onClick={onRemove}>
-              {button.text[selectedLanguage as "ar" | "en"]}
-            </button> )
-          else {
-            return (
-            <button key={index} className={button.class} onClick={onNextSlide}>
-              {button.text[selectedLanguage as "ar" | "en"]}
-            </button>)
-          }
-})
+            if (currentSlide === 2)
+              return (
+                <button
+                  key={index}
+                  className={button.class}
+                  onClick={() => onAddClick(button.add)}
+                >
+                  {button.text[selectedLanguage as "ar" | "en"]}
+                </button>
+              );
+            else if (currentSlide === 4)
+              return (
+                <button key={index} className={button.class} onClick={onRemove}>
+                  {button.text[selectedLanguage as "ar" | "en"]}
+                </button>
+              );
+            else {
+              return (
+                <button
+                  key={index}
+                  className={button.class}
+                  onClick={onNextSlide}
+                >
+                  {button.text[selectedLanguage as "ar" | "en"]}
+                </button>
+              );
+            }
+          })
         )}
 
         {selectedSlide.states && <States data={data} />}
