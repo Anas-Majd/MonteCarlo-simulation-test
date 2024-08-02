@@ -29,9 +29,13 @@ function App() {
     };
     fetchData();
   }, []);
-
+  const getQueryParams = () => {
+    return new URLSearchParams(window.location.search);
+  };
   useEffect(() => {
-    if (window.location.pathname.includes("/eruda")) {
+    const queryParams = getQueryParams();
+    const erudaEnabled = queryParams.get('debug') === 'true';
+    if (erudaEnabled) {
       import("eruda").then((eruda) => eruda.default.init());
     }
   }, []);
