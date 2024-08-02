@@ -27,8 +27,8 @@ export const slides = [
     id: 2,
     name: `2`,
     text: {
-      ar: "شكرا يا صاح. لكن هل  برأيك يوجد نمط أو استراتيجية انتقاء للأجوبة أفضل من الأخرى علما أنه ليس لدي أي علم عن الإجابات الصحيحة",
-      en: "Thanks, but I have to ask do you think that a superior strategy exists when I have no clue of what the answers are",
+      ar: "شكرا يا صاح لكن أريد رأيك. هل  برأيك يوجد نمط أو استراتيجية انتقاء للأجوبة أفضل من الأخرى علما أنه ليس لدي أي علم عن الإجابات الصحيحة",
+      en: "Thanks, but I have to ask do you think that a superior strategy exists given that the answers are unknown",
     },
     type: "normal",
     buttons: [
@@ -115,8 +115,8 @@ export const slides = [
     id: 6,
     name: `4-no`,
     text: {
-      ar: "أنا أعلم أن احتمال أن تكون الإجابة (صح) لكل سؤال هي 1/2 فنقول تقريبا أن 5 اسئلة من أصل عشرة ستكون إجابتها (صح) فإذا قمت بتوحيد اجابتي لصح فسأضمن تقريبا نصف العلامة",
-      en: "I know that the probability of each answer being correct is 1/2. So, we can say that about 5 out of 10 questions will be correct. If I unify my answers to true, I'll guarantee about half the score. when compared to other guessing strategies none offer this insurance",
+      ar: "أنا أعلم أن احتمال أن تكون الإجابة (صح) لكل سؤال هي 1/2 فنقول تقريبا أن 5 اسئلة من أصل عشرة ستكون إجابتها (صح) فإذا قمت بتوحيد اجابتي لصح فسأضمن تقريبا نص العلامة",
+      en: "I know that the probability of each answer being correct is 1/2. So, we can say that about 5 out of 10 questions will be correct. If I unify my answers to true, I'll guarantee about half the score. while other guessing strategies dont have this insurance",
     },
     type: "normal",
     buttons: [
@@ -176,8 +176,8 @@ export const slides = [
     id: 9,
     name: `7`,
     text: {
-      ar: "تستخدم في العديد من المجالات والبحوث سواء بالاقتصاد أو في الطب. تم تطويرها بواسطة أولام و فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن",
-      en: "You will find it in most fields of research, it's used for analyzing complex systems and assessing risks. It was developed by Ulam and von Neumann (the inventor of modern computer architecture) in the Manhattan Project.",
+      ar: "تستدخد في العديد من المجالات والبحوث سواء بالاقتصاد أو في الطب. تم تطويرها بواسطة أولام و فون نيومان (مخترع معمارية الحاسوب) في مشروع مانهاتن",
+      en: "You will find it in most fields and research, it's used for analyzing complex systems and assessing risks. It was developed by Ulam and von Neumann (the inventor of computer architecture) in the Manhattan Project.",
     },
     type: "normal",
     buttons: [
@@ -212,8 +212,8 @@ export const slides = [
     id: 11,
     name: `9`,
     text: {
-      ar: "أمامك نتائج المحاكة التي قام بها جهازك واذا كان لديك فضول لمعرفة طريقة عمل هذه المحاكاة ستجدها في ورقة البحث المرفقة آخر الموقع. لاحظ معي أن كل الاستراتيجيات تولد نفس التوزيع ونفس الانحراف المعياري و نفس المتوسط أي نفس التوقع",
-      en: "Here are the simulation results that your device performed. If you're curious about how it works, the research paper is available at the end of this site. Notice that all strategies generate the same distribution, the same standard deviation, and the same mean, which means the same expectation.",
+      ar: "أمامك نتائج المحاكة التي قام بها جهازك واذا كان لديك فضول لمعرفة منهجية عمل هذه المحاكاة فهي موجودة في البحث الموجود آخر الموقع. لاحظ معي أن كل الاستراتيجيات تولد نفس التوزيع ونفس الانحراف المعياري و نفس المتوسط أي نفس التوقع",
+      en: "Here are the simulation results that your device performed. If you're curious about how it works, the research is available at the end of the site. Notice that all strategies generate the same distribution, the same standard deviation, and the same mean, which means the same expectation.",
     },
     type: "normal",
     states: States,
