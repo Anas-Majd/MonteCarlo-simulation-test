@@ -5,7 +5,6 @@ import { CalculateScore, Compute } from "./services/logic";
 import { slides } from "../public/data/DialogueText";
 import Slide from "./components/Slide";
 import States from "./components/States";
-import eruda from "eruda";
 
 export interface Data {
   allTrue: { name: string; value: number }[];
@@ -31,9 +30,16 @@ function App() {
     };
     fetchData();
   }, []);
-  
+
+  const getQueryParams = () => {
+    return new URLSearchParams(window.location.search);
+  };
+
   useEffect(() => {
-    if (window.location.pathname.includes('/eruda')) {
+    const queryParams = getQueryParams();
+    const erudaEnabled = queryParams.get("debug") === "true";
+
+    if (erudaEnabled) {
       import("eruda").then((eruda) => eruda.default.init());
     }
   }, []);
